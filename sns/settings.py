@@ -87,10 +87,10 @@ WSGI_APPLICATION = 'sns.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'd66lnm206utpro',
-		'USER': 'ditntbwxitgjnd',
-		'PASSWORD': 'f352e9482ebdf1678ff66441ae5a70a29adda147f51f59549819ef5c1ac05ece',
-		'HOST': 'ec2-54-158-232-223.compute-1.amazonaws.com',
+        'NAME': 'db6egd13koq60q',
+		'USER': 'nuynfrcfgzwlog',
+		'PASSWORD': '98a5f36c08125e7b202f95032c7fdf03a5f3658460779712c356096cdc91cd47',
+		'HOST': 'ec2-3-225-41-234.compute-1.amazonaws.com',
 		'PORT': '5432',        
     }
 }
@@ -170,7 +170,7 @@ LOGOUT_REDIRECT_URL = '/accounts/login'
 try:
 	from .local_settings import *
 except ImportError:
-	pass
+    pass
 
 if not DEBUG:
 	SECRET_KEY = os.environ['SECRET_KEY']
